@@ -11,73 +11,181 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Smart Wallet</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+            <a class="navbar-brand fw-bold" href="#">Smart Wallet</a>
+            <div>
+                <button class="btn btn-outline-light btn-sm">Sair</button>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
+    <main class="container my-4">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h5 class="mb-1">Olá, Ricardo</h5>
+                <p class="text-muted">Bem-vindo de volta!</p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card bg-primary text-white">
+                    <div class="card-body p-4">
+                        <p class="mb-1 opacity-75">Saldo disponível</p>
+                        <h2 class="display-4 mb-0">R$ 5.487,32</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <h6 class="mb-3">Ações rápidas</h6>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <button class="btn btn-primary w-100 p-3">Pix</button>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <button class="btn btn-primary w-100 p-3">Recarga</button>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <button class="btn btn-primary w-100 p-3">Cartão</button>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <button class="btn btn-primary w-100 p-3">Transfer</button>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="mb-0">Últimas transações</h6>
+                    <a href="#" class="text-decoration-none">Ver todas</a>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center mb-4">Bem-vindo ao Projeto Smart Wallet</h1>
-                <p class="text-center lead">Este é um projeto HTML responsivo utilizando Bootstrap 5</p>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light rounded-circle p-3 me-3">
+                                    <span class="fs-5">🛒</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Supermercado ABC</h6>
+                                    <small class="text-muted">Hoje às 14:32</small>
+                                </div>
+                            </div>
+                            <span class="text-danger fw-bold">- R$ 187,90</span>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light rounded-circle p-3 me-3">
+                                    <span class="fs-5">📱</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Recarga de celular</h6>
+                                    <small class="text-muted">Ontem às 09:15</small>
+                                </div>
+                            </div>
+                            <span class="text-danger fw-bold">- R$ 30,00</span>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light rounded-circle p-3 me-3">
+                                    <span class="fs-5">💰</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Transferência recebida</h6>
+                                    <small class="text-muted">02/12 às 16:45</small>
+                                </div>
+                            </div>
+                            <span class="text-success fw-bold">+ R$ 500,00</span>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-light rounded-circle p-3 me-3">
+                                    <span class="fs-5">☕</span>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Café & Cia</h6>
+                                    <small class="text-muted">01/12 às 08:20</small>
+                                </div>
+                            </div>
+                            <span class="text-danger fw-bold">- R$ 15,50</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="row mt-5">
-            <div class="col-md-4 mb-4">
-                <div class="card">
+            <div class="col-12">
+                <h6 class="mb-3">Meus cartões</h6>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card bg-dark text-white">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
-                        <p class="card-text">Exemplo de card responsivo do Bootstrap.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                        <p class="mb-1 opacity-75">Cartão Virtual</p>
+                        <h5 class="mb-3">**** **** **** 4829</h5>
+                        <div class="d-flex justify-content-between">
+                            <small>Ricardo Aires</small>
+                            <small>12/28</small>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 2</h5>
-                        <p class="card-text">Exemplo de card responsivo do Bootstrap.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card 3</h5>
-                        <p class="card-text">Exemplo de card responsivo do Bootstrap.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
+            <div class="col-md-6 mb-3">
+                <div class="card border">
+                    <div class="card-body text-center py-5">
+                        <h1 class="display-4 text-muted">+</h1>
+                        <p class="text-muted mb-0">Adicionar cartão</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5">
+    <nav class="navbar fixed-bottom navbar-light bg-white border-top">
         <div class="container">
-            <p class="mb-0">&copy; 2024 Meu Projeto. Todos os direitos reservados.</p>
+            <div class="row w-100 text-center">
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-primary">
+                        <div class="fs-4">🏠</div>
+                        <small class="d-block">Início</small>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-muted">
+                        <div class="fs-4">📊</div>
+                        <small class="d-block">Extrato</small>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-muted">
+                        <div class="fs-4">🎁</div>
+                        <small class="d-block">Rewards</small>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-muted">
+                        <div class="fs-4">⚙️</div>
+                        <small class="d-block">Ajustes</small>
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

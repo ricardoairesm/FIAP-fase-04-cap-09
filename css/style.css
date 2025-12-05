@@ -1,38 +1,27 @@
-/* Custom Styles */
-
-:root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-}
+/* Smart Wallet Minimal Styles */
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+    padding-bottom: 80px;
+    background-color: #f8f9fa;
 }
 
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.btn-primary {
+    background-color: #495057;
+    border-color: #495057;
 }
 
-footer {
-    margin-top: auto;
+.btn-primary:hover {
+    background-color: #3a3f44;
+    border-color: #3a3f44;
 }
 
-@media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
+.bg-primary {
+    background-color: #495057 !important;
 }
