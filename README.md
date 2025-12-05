@@ -51,15 +51,6 @@ FIAP-fase-04-cap-09/
 └── README.md           # Documentação do projeto
 ```
 
-## Design e UX
-
-### Paleta de Cores
-- **Primary**: `#495057` (Cinza médio)
-- **Background**: `#f8f9fa` (Cinza claro)
-- **Success**: Verde Bootstrap padrão
-- **Danger**: Vermelho Bootstrap padrão
-- **Warning**: Amarelo Bootstrap padrã
-
 ## Autor
 
 Ricardo Aires - FIAP
