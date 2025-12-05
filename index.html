@@ -21,12 +21,6 @@
     </nav>
 
     <main class="container my-4">
-        <div class="row mb-4">
-            <div class="col-12">
-                <h5 class="mb-1">Olá, Ricardo</h5>
-                <p class="text-muted">Bem-vindo de volta!</p>
-            </div>
-        </div>
 
         <div class="row mb-4">
             <div class="col-12">
@@ -54,6 +48,17 @@
             </div>
             <div class="col-6 col-md-3 mb-3">
                 <button class="btn btn-primary w-100 p-3">Transfer</button>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <h6 class="mb-3">Movimentações dos últimos 7 dias</h6>
+                <div class="card">
+                    <div class="card-body">
+                        <canvas id="transactionsChart" height="100"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -155,39 +160,8 @@
             </div>
         </div>
     </main>
-
-    <nav class="navbar fixed-bottom navbar-light bg-white border-top">
-        <div class="container">
-            <div class="row w-100 text-center">
-                <div class="col">
-                    <a href="#" class="text-decoration-none text-primary">
-                        <div class="fs-4">🏠</div>
-                        <small class="d-block">Início</small>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="text-decoration-none text-muted">
-                        <div class="fs-4">📊</div>
-                        <small class="d-block">Extrato</small>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="text-decoration-none text-muted">
-                        <div class="fs-4">🎁</div>
-                        <small class="d-block">Rewards</small>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#" class="text-decoration-none text-muted">
-                        <div class="fs-4">⚙️</div>
-                        <small class="d-block">Ajustes</small>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>
